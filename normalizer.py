@@ -253,7 +253,7 @@ def main():
     parser.add_argument("output_file", help="this is the csv file you want the program to use as csv format output")
     args = parser.parse_args()
 
-    # Add O(n) time complexity assuming the number of columns and characters per field in the database are constant
+    # Add O(n) time complexity assuming the number of columns and characters per field in the csv are constant
     parsed_csv_list = read_csv(args.input_file)
 
     # debug statement to print out how the csv was parsed
